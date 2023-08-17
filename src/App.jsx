@@ -2,6 +2,10 @@ import { useState } from 'react'
 import './App.css'
 import Intro from './Intro'
 import Navbar from './Navbar'
+import Experience from './Experience'
+import Skills from './Skills'
+import Projects from './Projects'
+import ContactMe from './ContactMe'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -12,13 +16,12 @@ function App() {
         <source src='src/assets/particles.mp4' type="video/mp4" />
       </video>
 
-      <Navbar />
-      <Intro />
-      
-      {/* <Experience/>
+      <Navbar/>
+      <Intro/>
+      <Experience/>
       <Skills/>
       <Projects/>
-      <ContactMe/> */}
+      <ContactMe/>
     </>
   )
 }
