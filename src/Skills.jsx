@@ -1,7 +1,7 @@
 import './Styles.scss'
 
 function Skills() {
-    const iconfp = 'public/static/Icons/'
+    const iconfp = 'static/Icons/'
     return (
         <div className='skills container-fluid'>
             <h1 className='display-1 caveat white'>My <span className='yellow'>Skills</span></h1>
