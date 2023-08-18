@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <video className='z-0' playsInline autoPlay muted loop>
-        <source src='public/static/particles.mp4' type="video/mp4" />
+        <source src='/public/static/particles.mp4' type="video/mp4" />
       </video>
 
       <Navbar/>
