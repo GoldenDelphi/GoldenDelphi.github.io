@@ -20,11 +20,7 @@ function Timeline() {
                         <div className="card-body p-4">
                             <h4>Google: STEP Intern</h4>
                             <p className="text-muted"><i className="bi-calendar-month"></i> May 2022 - August 2022</p>
-                            <p className="mb-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                                doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-                                architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-                                aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
-                                sequi nesciunt.</p>
+                            <p className="mb-0">Worked under the Formats Team at Google Ads, on the back-end of a project which aimed at creating a tool/platform to support faster prototyping and experimentation of new Ad Formats/Ad Extensions.</p>
                         </div>
                     </div>
                 </div>
