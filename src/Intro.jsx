@@ -2,7 +2,7 @@ import './Styles.scss'
 
 function Intro() {
     return (
-        <div id='intro'>
+        <div className='intro'>
             <div id='intro-text'>
                 <h1 className='display-1 white caveat'>Hi!<br/>I'm
                 <span className='pink'> Divyanshi</span>
