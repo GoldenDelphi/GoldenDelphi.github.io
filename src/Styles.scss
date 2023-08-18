@@ -232,4 +232,31 @@ $caveat: 'Caveat', cursive;
 .skills {
     position: relative;
     padding-top: 15vh;
+
+    .row {
+        padding-top: 3vh;
+        padding-bottom: 20vh;
+    }
+
+    @keyframes logo-spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    
+    .skill-icon {
+        width: 15vh;
+        padding: 3vh;
+        filter: drop-shadow(0.05vw 0 0.25vw $dark-yellow);
+        animation: logo-spin infinite 20s linear;
+        &:hover {
+            transform: scale(1.1);
+            transition: all 0.2s ease-in;
+            filter: drop-shadow(0 0 2em $dark-yellow);
+            
+        }
+    }
 }
