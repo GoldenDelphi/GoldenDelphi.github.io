@@ -15,8 +15,10 @@ $green: #00F5D4;
 $dark-green: #63ffc8;
 
 $white: white;
+$muted-white: #ffffffa7;
 
-$transperent-black: #2d2b2bc3;
+$transperent-grey: #2d2b2bc3;
+$transperent-black: rgba(21, 20, 20, 0.793);
 
 // Fonts:
 $caveat: 'Caveat', cursive;
@@ -139,12 +141,12 @@ $lilita: 'Lilita One';
         color: $white;
         background: $transperent-black;
         overflow: hidden;
-        box-shadow: 0px 2px 15px $purple;
+        box-shadow: 0px 2px 15px $dark-purple;
         border-radius: 10px;
 
 
         &:hover {
-            box-shadow: 0px 15px 26px $dark-purple;
+            box-shadow: 0px 15px 26px $purple;
             -webkit-transition: all 0.2s ease-in;
             -moz-transition: all 0.2s ease-in;
             -ms-transition: all 0.2s ease-in;
@@ -160,7 +162,7 @@ $lilita: 'Lilita One';
         }
 
         .date {
-            color: #ffffffd0;
+            color: $muted-white;
         }
     }
 
@@ -308,7 +310,7 @@ $lilita: 'Lilita One';
 
     .row-tile {
         padding: 2vh;
-        background-color: rgba(21, 20, 20, 0.793);
+        background-color: $transperent-black;
         margin-left: 3vw;
         border-radius: 15px;
         box-shadow: 0px 1px 10px $green;
@@ -331,6 +333,39 @@ $lilita: 'Lilita One';
 .projects {
     position: relative;
     padding-top: 10vh;
+
+    .card-deck {
+        margin-top: 5vh;
+
+        .col-pad {
+            margin: 3vh 2vw 3vh 2vw;
+        }
+    }
+
+    .card {
+        background-color: $transperent-black;
+        color: $white;
+        box-shadow: 0px 2px 15px $dark-pink;
+        border-radius: 10px;
+        width: 20vw;
+        height: 35vh;
+        overflow: scroll;
+        padding: 1vw;
+
+        .card-text{
+            padding-top: 1vh;
+            color: $muted-white;
+        }
+
+        &:hover {
+            box-shadow: 0px 8px 10px $pink;
+            -webkit-transition: all 0.2s ease-in;
+            -moz-transition: all 0.2s ease-in;
+            -ms-transition: all 0.2s ease-in;
+            -o-transition: all 0.2s ease-in;
+            transition: all 0.2s ease-in;
+        }
+    }
 }
 
 /* Contact Me */
