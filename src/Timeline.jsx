@@ -6,7 +6,7 @@ function Timeline() {
             <div className="main-timeline">
                 <div className="timeline left">
                     <div className="card">
-                        <img src="src/assets/me-google1.jpeg" className="card-img-top"/>
+                        <img src="public/static/me-google1.jpeg" className="card-img-top"/>
                         <div className="card-body p-4">
                             <h4>Google: SWE Intern</h4>
                             <p className="date"><i className="bi-calendar-month"></i> May 2023 - July 2023</p>
@@ -16,7 +16,7 @@ function Timeline() {
                 </div>
                 <div className="timeline right">
                     <div className="card">
-                        <img src="src/assets/me-google2.jpeg" className="card-img-top"/>
+                        <img src="public/static/me-google2.jpeg" className="card-img-top"/>
                         <div className="card-body p-4">
                             <h4>Google: STEP Intern</h4>
                             <p className="date"><i className="bi-calendar-month"></i> May 2022 - August 2022</p>
