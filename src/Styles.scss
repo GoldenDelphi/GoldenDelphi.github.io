@@ -49,6 +49,10 @@ $lilita: 'Lilita One';
     color: white;
 }
 
+.muted-white {
+    color: #ffffff66;
+}
+
 .caveat {
     font-family: 'Caveat';
 }
@@ -285,10 +289,14 @@ $lilita: 'Lilita One';
     .col-img {
         margin-left: 2vh;
         margin-right: 2vh;
-        margin-top: 14vh;
+        margin-top: 11vh;
         height: 30vh;
         border-radius: 20px;
         // background-color: salmon;
+
+        .edu-details {
+            color: $white;
+        }
     }
 
     .edu-img {

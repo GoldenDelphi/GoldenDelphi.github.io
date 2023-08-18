@@ -4,7 +4,14 @@ function Education() {
             <h1 className="display-1 caveat white">My <span className='green'>Education</span></h1>
             <div className="row justify-content-center">
                 <div className="col col-3 col-img">
-                    <img className='edu-img img-fluid' src='static/Icons/vit1.png' />
+                    <div className="row">
+                        <img className='edu-img img-fluid' src='static/Icons/vit1.png' />
+                    </div>
+                    <div className="row text-center edu-details">
+                        <h6 className="fs-5 mb-0">2020-2024</h6>
+                        <p>Senior</p>
+                    </div>
+
                 </div>
                 <div className="col col-5 col-body white">
                     <div className="row row-tile">

@@ -15,7 +15,7 @@ function Navbar() {
               <button type="button" className="btn btn-outline-light btn-purple">Experience</button>
               </li>
               <li className="nav-item">
-              <button type="button" className="btn btn-outline-light btn-yellow">Education</button>
+              <button type="button" className="btn btn-outline-light btn-green">Education</button>
               </li>
               <li className="nav-item">
               <button type="button" className="btn btn-outline-light btn-blue">Contact Me</button>
