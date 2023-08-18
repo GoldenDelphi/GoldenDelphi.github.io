@@ -16,8 +16,11 @@ $dark-green: #63ffc8;
 
 $white: white;
 
+$transperent-black: #2d2b2bc3;
+
 // Fonts:
 $caveat: 'Caveat', cursive;
+$lilita: 'Lilita One';
 
 
 .pink {
@@ -47,6 +50,11 @@ $caveat: 'Caveat', cursive;
 .caveat {
     font-family: 'Caveat';
 }
+
+.lilita {
+    font-family: 'Lilita One';
+}
+
 
 /* Intro */
 
@@ -129,11 +137,11 @@ $caveat: 'Caveat', cursive;
     .card {
         width: 30rem;
         color: $white;
-        background: #2d2b2bc3;
+        background: $transperent-black;
         overflow: hidden;
         box-shadow: 0px 2px 15px $purple;
         border-radius: 10px;
-        
+
 
         &:hover {
             box-shadow: 0px 15px 26px $dark-purple;
@@ -231,32 +239,103 @@ $caveat: 'Caveat', cursive;
 
 .skills {
     position: relative;
-    padding-top: 15vh;
+    padding-top: 10vh;
 
     .row {
         padding-top: 3vh;
-        padding-bottom: 20vh;
     }
 
     @keyframes logo-spin {
         from {
-          transform: rotate(0deg);
+            transform: rotate(0deg);
         }
+
         to {
-          transform: rotate(360deg);
+            transform: rotate(360deg);
         }
-      }
-    
+    }
+
     .skill-icon {
         width: 15vh;
         padding: 3vh;
         filter: drop-shadow(0.05vw 0 0.25vw $dark-yellow);
         animation: logo-spin infinite 20s linear;
+
         &:hover {
             transform: scale(1.1);
             transition: all 0.2s ease-in;
             filter: drop-shadow(0 0 2em $dark-yellow);
-            
+
         }
     }
+}
+
+/* Education */
+
+.education {
+    position: relative;
+    padding-top: 15vh;
+
+    .row {
+        margin: 3vh;
+    }
+
+    .col-img {
+        margin-left: 2vh;
+        margin-right: 2vh;
+        margin-top: 14vh;
+        height: 30vh;
+        border-radius: 20px;
+        // background-color: salmon;
+    }
+
+    .edu-img {
+        height: 90%;
+        object-fit: cover;
+        border-radius: 20px;
+        filter: drop-shadow(0.05vw 0.05vh 0 $white);
+    }
+
+    .col-body{
+        // background-color: #f15bb5;
+        // width: 5vw;
+        img {
+            width: 3vw;
+            padding-right: 0.5vw
+        }
+
+    }
+
+    .row-tile {
+        padding: 2vh;
+        background-color: rgba(21, 20, 20, 0.793);
+        margin-left: 3vw;
+        border-radius: 15px;
+        box-shadow: 0px 1px 10px $green;
+
+        &:hover {
+            box-shadow: 0px 8px 10px $dark-green;
+            -webkit-transition: all 0.2s ease-in;
+            -moz-transition: all 0.2s ease-in;
+            -ms-transition: all 0.2s ease-in;
+            -o-transition: all 0.2s ease-in;
+            transition: all 0.2s ease-in;
+        }
+    }
+
+
+}
+
+/* Projects */
+
+.projects {
+    position: relative;
+    padding-top: 10vh;
+}
+
+/* Contact Me */
+
+.contact-me {
+    position: relative;
+    padding-top: 15vh;
 }
