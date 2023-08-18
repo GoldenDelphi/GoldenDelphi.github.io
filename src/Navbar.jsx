@@ -1,38 +1,29 @@
-import './Styles.css'
+import './Styles.scss'
 
 function Navbar() {
     return (
-        <nav className="" id="navbar">
-            <div className='container-fluid'>
-                {/* <ul class="nav nav-underline">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Active</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                    </li>
-                </ul> */}
-
-                {/* <div class="d-flex flex-row-reverse">
-                    <div class="mr-auto p-2">Flex item</div>
-                    <div class="p-2">Flex item</div>
-                    <div class="p-2">Flex item</div>
-                </div> */}
-                {/* <a className="white" href="#">Divyanshi</a>
-                <span>
-                <button type="button" class="btn btn-outline-light">Light</button>
-                <button type="button" class="btn btn-outline-light">Light</button>
-                <button type="button" class="btn btn-outline-light float-right">Light</button>
-                </span> */}
-            </div>
-
-        </nav>
+        <nav className="navbar navbar-expand-lg">
+        <div className="container">
+          <a className="navbar-brand caveat white">Divyanshi Srivastava</a>
+    
+          <div className="justify-content-end" id="navbarNav">
+            <ul className="navbar-nav">
+              <li className="nav-item">
+              <button type="button" className="btn btn-outline-light btn-pink">About</button>
+              </li>
+              <li className="nav-item">
+              <button type="button" className="btn btn-outline-light btn-purple">Experience</button>
+              </li>
+              <li className="nav-item">
+              <button type="button" className="btn btn-outline-light btn-yellow">Education</button>
+              </li>
+              <li className="nav-item">
+              <button type="button" className="btn btn-outline-light btn-blue">Contact Me</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     )
 }
 

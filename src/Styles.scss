@@ -1,0 +1,112 @@
+// Colors:
+$pink: #f15bb5;
+$dark-pink: #f72585;
+
+$purple: #9b5de5;
+$dark-purple: #7209b7;
+
+$yellow: #fee440;
+$dark-yellow: #ffcc00;
+
+$blue: #00bbf9;
+$dark-blue: #4361ee;
+
+$green: #00F5D4;
+$dark-green: #63ffc8;
+
+$white: white;
+
+// Fonts:
+$caveat: 'Caveat', cursive;
+
+
+.pink {
+    color: #f15bb5;
+}
+
+.purple {
+    color: #9b5de5;
+}
+
+.yellow {
+    color: #fee440;
+}
+
+.blue {
+    color: #00bbf9;
+}
+
+.green {
+    color: #00F5D4;
+}
+
+.white {
+    color: white;
+}
+
+.caveat {
+    font-family: 'Caveat';
+}
+
+/* Intro */
+
+#intro {
+    position: relative;
+
+    #intro-text {
+        padding-left: 10vw;
+        padding-top: 15vw;
+    }
+
+    .display-1 {
+        font-size: 7rem;
+    }
+}
+
+/* NavBar */
+
+@mixin btn($color, $border-color) {
+    border-color: $color;
+    &:hover {
+        color: $color;
+        background-color: transparent;
+        border-color: $border-color;
+        outline: 4px auto $border-color;
+    }
+}
+
+.navbar {
+    .navbar-brand {
+        font-family: $caveat;
+        font-size: 2rem;
+    }
+
+    .navbar-brand:hover {
+        color: $dark-pink;
+    }
+
+    .nav-item {
+        padding-left: 1vw;
+        padding-right: 1vw;
+
+        .btn-pink {
+            @include btn($pink, $dark-pink);
+        }
+
+        .btn-purple {
+            @include btn($purple, $dark-purple);
+        }
+
+        .btn-yellow {
+            @include btn($yellow, $dark-yellow);
+        }
+
+        .btn-blue {
+            @include btn($blue, $dark-blue);
+        }
+
+        .btn-green {
+            @include btn($green, $dark-green);
+        }
+    }
+}
