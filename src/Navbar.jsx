@@ -4,7 +4,7 @@ function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg">
         <div className="container">
-          <a className="navbar-brand caveat white">Divyanshi Srivastava</a>
+          <a className="navbar-brand caveat white"><span className='pink'>Divyanshi</span> Srivastava</a>
     
           {/* <div className="justify-content-end" id="navbarNav">
             <ul className="navbar-nav">
