@@ -6,7 +6,7 @@ function Navbar() {
         <div className="container">
           <a className="navbar-brand caveat white">Divyanshi Srivastava</a>
     
-          <div className="justify-content-end" id="navbarNav">
+          {/* <div className="justify-content-end" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
               <button type="button" className="btn btn-outline-light btn-pink">About</button>
@@ -21,7 +21,7 @@ function Navbar() {
               <button type="button" className="btn btn-outline-light btn-blue">Contact Me</button>
               </li>
             </ul>
-          </div>
+          </div> */}
         </div>
       </nav>
     )
