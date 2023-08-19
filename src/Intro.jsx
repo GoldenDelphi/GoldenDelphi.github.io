@@ -16,7 +16,7 @@ function Intro() {
                 </div>
                 <div className='col-12 col-md-4 box-2 text-center'>
                     <div className='intro-img-div'>
-                        <img src="static/me-nobg1.png" className='intro-img img-fluid' />
+                        <img src="static/me-nobg.png" className='intro-img img-fluid' />
                     </div>
 
                 </div>
