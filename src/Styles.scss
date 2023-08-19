@@ -84,11 +84,11 @@ $lilita: 'Lilita One';
         width: fit-content;
         border-radius: 300%;
         border-color: $pink;
-        box-shadow: 6px 12px 26px $dark-pink;
+        box-shadow: 2px 12px 26px $pink;
         overflow: hidden;
         
         &:hover {
-            box-shadow: 0px 15px 26px $pink;
+            box-shadow: 0px 15px 26px $dark-pink;
             -webkit-transition: all 0.2s ease-in;
             -moz-transition: all 0.2s ease-in;
             -ms-transition: all 0.2s ease-in;
