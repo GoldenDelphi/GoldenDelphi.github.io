@@ -64,8 +64,39 @@ $lilita: 'Lilita One';
 
 /* Intro */
 
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@mixin typing-div($char, $width, $time) {
+    animation: typing $time steps($char, end), step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    width: $width;
+}
+
 .intro {
     position: relative;
+
+    // .intro-anim-1 {
+    //     @include typing-div(4, 4ch, 0.3, 0);
+    // }
+
+    .intro-anim-2 {
+        @include typing-div(13, 13ch, 0.91s);
+    }
+
+    // .intro-anim-3 {
+    //     @include typing-div(27, 27ch, 3s);
+    // }
 
     #intro-text {
         padding-left: 10vw;
@@ -78,7 +109,6 @@ $lilita: 'Lilita One';
         font-size: 7rem;
     }
 
-
     .intro-img-div {
         margin-top: 18vh; //20vh;
         width: fit-content;
@@ -86,7 +116,7 @@ $lilita: 'Lilita One';
         border-color: $pink;
         box-shadow: 2px 12px 26px $pink;
         overflow: hidden;
-        
+
         &:hover {
             box-shadow: 0px 15px 26px $dark-pink;
             -webkit-transition: all 0.2s ease-in;
@@ -96,7 +126,6 @@ $lilita: 'Lilita One';
             transition: all 0.2s ease-in;
         }
     }
-
 
     .intro-img {
         width: 70%; // 73%;

@@ -6,10 +6,16 @@ function Intro() {
             <div className='row'>
                 <div className='col-12 col-md-8 box-1'>
                     <div id='intro-text'>
-                        <h1 className='display-1 white caveat'>Hi!<br />I'm
-                            <span className='pink'> Divyanshi</span>
+                        <h1 className='display-1 white caveat'>
+                            <div className='intro-anim-1 text-start'>
+                                Hi!
+                            </div>
+                            <div className='intro-anim-2'>
+                                I'm 
+                                <span className='pink'>&nbsp;Divyanshi</span>
+                            </div>
                         </h1>
-                        <h3 className='display-5 muted-white'>Software Engineering Intern</h3>
+                        <h3 className='display-5 muted-white intro-anim-3'>Software Engineering Intern</h3>
 
                         {/* <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc cursus feugiat velit, vel ullamcorper risus tincidunt quis</h3> */}
                     </div>
