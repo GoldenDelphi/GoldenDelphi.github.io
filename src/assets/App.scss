@@ -1,0 +1,187 @@
+$transperent-white-1: #ffffff60;
+$transperent-white-2: #ffffffb6;
+$white: white;
+
+@mixin card-template {
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(128, 128, 128, 0.647);
+  backdrop-filter: blur(4px);
+}
+
+@mixin card-animation-hover {
+  transition: transform 0.2s ease;
+  transform: scale(1.04);
+  box-shadow: 0px 6px 10px rgba(128, 128, 128, 0.647);
+}
+
+
+.component-title {
+  padding: 1vh 0vw 1vh 0vw;
+  margin: 3vh 0vw 3vh 0vw;
+}
+
+.component-box {
+  margin: 4vh 0vw 3vh 2vw;
+}
+
+.skills-comp {
+  .first-col {
+    margin-top: 5vh;
+  }
+
+  .row {
+    margin-bottom: 3vh;
+  }
+
+  .skill-icon {
+    width: 20vh;
+    padding: 3vh;
+
+    &:hover {
+      filter: drop-shadow(0 0 2em #9b8191aa);
+      animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+    }
+  }
+
+}
+
+.education-comp {
+  .row {
+    margin-top: 5vh;
+  }
+
+  .card {
+    @include card-template;
+    background-color: $transperent-white-1;
+
+    &:hover {
+      @include card-animation-hover;
+    }
+
+    .card-img-top {
+      width: 100%;
+      object-fit: cover;
+      padding: 1vw;
+    }
+  }
+
+  .achievements {
+    .list-group {
+      img {
+        width: 3vw;
+        padding-right: 0.5vw
+      }
+    }
+  }
+}
+
+.projects-comp {
+  .card {
+    @include card-template;
+    margin: 2vh 0vw 2vh 0vw;
+    border-top: black 2px solid;
+
+    &:hover {
+      @include card-animation-hover;
+    }
+
+    .btn {
+      &:hover {
+        animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+      }
+    }
+  }
+
+}
+
+.about-comp {
+  margin: 20vh 8vw 20vh 8vw; // t r b l
+  padding: 10vh 2vw 10vh 2vw; // t r b l
+}
+
+.navbar-comp {
+  margin: 3vh 0vw 3vh 0vw;
+
+  .bg-body-tertiary {
+    background-color: transparent !important;
+
+    .nav-item {
+
+      width: 7em;
+
+      .nav-link {
+        color: black;
+
+        &:hover {
+          color: #646cff;
+        }
+      }
+    }
+
+    .navbar-brand {
+      font-family: 'Borel', cursive;
+      font-size: 1.8em;
+    }
+  }
+}
+
+@keyframes shake {
+
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+/*
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
