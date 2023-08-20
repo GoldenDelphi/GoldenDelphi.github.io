@@ -12,7 +12,7 @@ function Timeline() {
                                 <img src="../google.svg" />
                             </span>
 
-                            <div className="timeline-content">
+                            <div className="timeline-content gentle-shake">
                                 <h3>SWE Intern</h3>
                                 <p>May 2023 - July 2023</p>
                                 <h5>Google</h5>
@@ -28,7 +28,7 @@ function Timeline() {
                                 <img src="../google.svg" />
                             </span>
 
-                            <div className="timeline-content">
+                            <div className="timeline-content gentle-shake">
                                 <h3>STEP Intern</h3>
                                 <p>May 2022 - August 2022</p>
                                 <h5>Google</h5>

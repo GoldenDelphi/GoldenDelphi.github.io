@@ -137,11 +137,31 @@ $white: white;
   img {
     width: 3vw;
     margin-right: 1vw;
+
     &:hover {
       filter: drop-shadow(0.05vw 0 0.25vw #3e393ca8);
       transform: scale(1.1);
     }
   }
+}
+
+@mixin slide-in-t($time) {
+  animation: slide-in $time forwards;
+  -webkit-animation: slide-in $time forwards;
+}
+
+.slide-in {
+  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  @include slide-in-t(1.5s);
+}
+
+@keyframes slide-in {
+  100% { transform: translateX(0%); }
+}
+
+@-webkit-keyframes slide-in {
+  100% { -webkit-transform: translateX(0%); }
 }
 
 @keyframes shake {
@@ -166,4 +186,16 @@ $white: white;
   60% {
     transform: translate3d(4px, 0, 0);
   }
+}
+
+.gentle-shake {
+  animation: tilt-shaking 0.5s;
+}
+
+@keyframes tilt-shaking {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(2deg); }
+  50% { transform: rotate(0eg); }
+  75% { transform: rotate(-2deg); }
+  100% { transform: rotate(0deg); }
 }
