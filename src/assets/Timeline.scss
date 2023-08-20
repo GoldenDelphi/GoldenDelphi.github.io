@@ -1,0 +1,118 @@
+$shadow-grey: rgba(128, 128, 128, 0.647);
+$transperent-white-1: #ffffff60;
+$transperent-white-2: #ffffffb6;
+$white: white;
+
+.timeline-container {
+    .main-timeline {
+      padding-top: 50px;
+      overflow: hidden;
+      position: relative
+    }
+  
+    .main-timeline .timeline {
+      width: 50%;
+      float: left;
+      padding: 20px 60px;
+      border-top: 5px solid #000000d8;
+      border-right: 7px solid #000000d8;
+      border-radius: 0 30px 0 0;
+      position: relative;
+      right: -3.5px
+    }
+  
+    .main-timeline .icon {
+      display: block;
+      object-fit: cover;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      text-align: center;
+      box-shadow: 0 2px 4px $shadow-grey;
+      position: absolute;
+      top: -30px;
+      left: 0
+    }
+  
+    .main-timeline .timeline-content {
+      display: block;
+      padding: 3vh 2vw 2vh 2vw;
+      border-radius: 20px;
+      background: $transperent-white-1;
+      color: black;
+      position: relative
+    }
+  
+    .main-timeline .timeline-content:after,
+    .main-timeline .timeline-content:before {
+      content: "";
+      display: block;
+      width: 10px;
+      height: 50px;
+      border-radius: 10px;
+      background: $transperent-white-1;
+      border: 1px solid #fff;
+      position: absolute;
+      top: -35px;
+      left: 50px
+    }
+  
+    .main-timeline .timeline-content:after {
+      left: auto;
+      right: 50px
+    }
+
+  
+    .main-timeline .timeline:nth-child(2n) {
+      border-right: none;
+      border-left: 7px solid #000000d8;
+      border-radius: 30px 0 0;
+      right: auto;
+      left: -3.5px
+    }
+  
+    .main-timeline .timeline:nth-child(2n) .icon {
+      left: auto;
+      right: 0;
+      box-shadow: 0 2px 4px $shadow-grey;
+    }
+  
+    .main-timeline .timeline:first-child,
+    .main-timeline .timeline:last-child:nth-child(even) {
+      margin: 0 0 30px
+    }
+  
+  
+    @media only screen and (max-width:767px) {
+      .main-timeline:before {
+        left: 0;
+        right: auto
+      }
+  
+      .main-timeline .timeline,
+      .main-timeline .timeline:nth-child(even),
+      .main-timeline .timeline:nth-child(odd) {
+        width: 100%;
+        float: none;
+        padding: 20px 30px;
+        margin: 0 0 30px;
+        border-right: none;
+        border-left: 7px solid #000000d8;
+        border-radius: 30px 0 0;
+        right: auto;
+        left: 0
+      }
+  
+      .main-timeline .icon {
+        left: auto;
+        right: 0
+      }
+    }
+  
+    @media only screen and (max-width:480px) {
+      .main-timeline .title {
+        font-size: 18px
+      }
+    }
+  }
+  
