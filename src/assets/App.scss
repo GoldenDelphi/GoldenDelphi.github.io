@@ -52,7 +52,6 @@ $white: white;
 
   .card {
     @include card-template;
-    background-color: $transperent-white-1;
 
     &:hover {
       @include card-animation-hover;
@@ -62,6 +61,17 @@ $white: white;
       width: 100%;
       object-fit: cover;
       padding: 1vw;
+    }
+  }
+
+  .card-1 {
+    background-color: $transperent-white-1;
+  }
+
+  .card-2 {
+    background-color: $transperent-white-1;
+    .list-group-item {
+      background-color: $transperent-white-1 !important;
     }
   }
 

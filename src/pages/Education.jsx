@@ -6,7 +6,7 @@ export default function Education() {
             <h1 className='component-title'>My Education</h1>
             <div className='row row-md-12  justify-content-center'>
                 <div className='col-md-3 info'>
-                    <div className='card'>
+                    <div className='card card-1'>
                         <img src="../vit1.png" className="card-img-top" />
                         <div className="card-body">
                             <h5 className="card-title">Senior, 2020-2024</h5>
@@ -15,7 +15,7 @@ export default function Education() {
                     </div>
                 </div>
                 <div className='col-md-6 achievements'>
-                    <div className="card">
+                    <div className="card card-2">
                         <div className="card-header">
                             <h4>My Achievements</h4>
                         </div>
