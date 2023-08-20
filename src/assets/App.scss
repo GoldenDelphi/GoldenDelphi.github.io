@@ -70,6 +70,7 @@ $white: white;
 
   .card-2 {
     background-color: $transperent-white-1;
+
     .list-group-item {
       background-color: $transperent-white-1 !important;
     }
@@ -101,7 +102,10 @@ $white: white;
   }
 
   .card {
-    @include card-template;
+    // @include card-template;
+    background-color: $transperent-white-2;
+    box-shadow: 0px 4px 8px rgba(128, 128, 128, 0.647);
+    backdrop-filter: blur(4px);
     margin: 2vh 0vw 2vh 0vw;
     border-top: black 2px solid;
 
@@ -167,11 +171,15 @@ $white: white;
 }
 
 @keyframes slide-in {
-  100% { transform: translateX(0%); }
+  100% {
+    transform: translateX(0%);
+  }
 }
 
 @-webkit-keyframes slide-in {
-  100% { -webkit-transform: translateX(0%); }
+  100% {
+    -webkit-transform: translateX(0%);
+  }
 }
 
 @keyframes shake {
@@ -203,9 +211,23 @@ $white: white;
 }
 
 @keyframes tilt-shaking {
-  0% { transform: rotate(0deg); }
-  25% { transform: rotate(2deg); }
-  50% { transform: rotate(0eg); }
-  75% { transform: rotate(-2deg); }
-  100% { transform: rotate(0deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(2deg);
+  }
+
+  50% {
+    transform: rotate(0eg);
+  }
+
+  75% {
+    transform: rotate(-2deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
 }
