@@ -84,6 +84,7 @@ $white: white;
     background-color: #c7efef;
     border: #c7efef;
     color: black;
+
     &:hover {
       animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
     }
@@ -102,7 +103,7 @@ $white: white;
 }
 
 .about-comp {
-  margin: 20vh 8vw 20vh 8vw; // t r b l
+  margin: 20vh 8vw 15vh 8vw; // t r b l
   padding: 10vh 2vw 10vh 2vw; // t r b l
 }
 
@@ -128,6 +129,17 @@ $white: white;
     .navbar-brand {
       font-family: 'Borel', cursive;
       font-size: 1.8em;
+    }
+  }
+}
+
+.footer-comp {
+  img {
+    width: 3vw;
+    margin-right: 1vw;
+    &:hover {
+      filter: drop-shadow(0.05vw 0 0.25vw #3e393ca8);
+      transform: scale(1.1);
     }
   }
 }
