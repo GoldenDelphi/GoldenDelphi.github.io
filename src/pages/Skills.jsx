@@ -25,6 +25,8 @@ export default function Skills() {
                         <img className='skill-icon' src="../cpp.svg"/>
                         <img className='skill-icon' src="../mysql.svg"/>
                         <img className='skill-icon' src="../git.svg"/>
+                        <img className='skill-icon' src="../algo.svg"/>
+                        <img className='skill-icon' src="../cf.svg"/>
                     </div>
                 </div>
                 <div className="row justify-content-center">
