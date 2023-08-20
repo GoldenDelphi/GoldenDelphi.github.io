@@ -76,6 +76,19 @@ $white: white;
 }
 
 .projects-comp {
+  img {
+    width: 2vw;
+  }
+
+  .btn {
+    background-color: #c7efef;
+    border: #c7efef;
+    color: black;
+    &:hover {
+      animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+    }
+  }
+
   .card {
     @include card-template;
     margin: 2vh 0vw 2vh 0vw;
@@ -83,12 +96,6 @@ $white: white;
 
     &:hover {
       @include card-animation-hover;
-    }
-
-    .btn {
-      &:hover {
-        animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
-      }
     }
   }
 

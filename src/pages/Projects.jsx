@@ -1,7 +1,7 @@
 import '../assets/App.scss'
 
 function Card({ title, description, link = "", btnText = "Check it out!", websiteReady = true}) {
-    let button = <a href={link} className="btn btn-primary">{btnText}</a>
+    let button = <a href={link} className="btn btn-primary"><img src="../githubblack.svg"/>{" " + btnText}</a>
     if (!websiteReady) {
         button = <button className="btn btn-primary" disabled>Coming Soon..</button>
     }
