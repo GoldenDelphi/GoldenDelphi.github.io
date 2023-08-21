@@ -28,8 +28,8 @@ export default function NavBar() {
                                 <NavLink className="nav-link" to="/projects">Projects</NavLink>
                             </li>
                         </ul>
+                        <NavLink className="navbar-brand justify-content-end">Divyanshi Srivastava</NavLink>
                     </div>
-                    <NavLink className="navbar-brand justify-content-end">Divyanshi Srivastava</NavLink>
                 </div>
             </nav>
         </div>
